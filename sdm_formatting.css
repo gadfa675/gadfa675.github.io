@@ -1,0 +1,107 @@
+@charset "utf-8";
+/*
+    Web Development Fundamentals 25SP-WEB110-N801
+    Project part 1
+    Author: Gramiani Diaz 
+    Date: 03/29/2025
+    Filename: sdm_formatting.css
+*/
+
+/* Format background and text */
+/* Background color for the entire document light blue */
+html {
+    background-color: rgb(173,216,230)
+}
+
+/* Body color / font / line height */
+body {
+    color: rgb(36,99,171);
+    background-color: rgb(160,160,160);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 2em;
+    
+}
+
+body > header {
+    color: rgb(255,255,240);
+    background-color: rgb(171,99,36);
+}
+/*Pseudo classes to hypertex links of Unordered lists*/
+nav ul li:first-of-type {
+    color: rgb(255,255,240);
+    list-style-type: none  
+}
+
+header nav ul li:nth-of-type(2) {
+    color: rgb(255,255,240);
+    list-style-type: none  
+}
+
+/*Dynamic pseudo classes*/
+nav ul li a:link, nav ul li a:visited{
+    color:blanchedalmond;
+    text-decoration: none
+}
+
+nav ul li a:hover, nav ul li a:active{
+    color:rgb(205, 255, 216);
+    text-decoration: none;
+}
+
+aside a:hover, aside a:active{
+    color:rgb(205, 255, 216)
+}
+/* Contextual Selectors */
+body > article > h1{
+    color: rgb(36,99,171);
+}
+
+/* Contextual Selectors */
+p em {
+    color: rgb(171,99,36);
+}
+
+/* Contextual Selectors */
+p cite {
+    color: rgb(171,99,36);
+}
+
+/* Contextual Selectors */
+p q {
+    color: rgb(171,99,36); 
+}
+
+/* Atribute selectors */
+h1.listing{
+    color: rgba(171,99,36); 
+}
+
+.listTitle{
+    color:rgb(171, 61, 36)
+}
+footer address{
+    color: rgb(255,255,240);
+    background-color: rgb(171,99,36);
+    font: normal small-caps bold 0.9em/3em
+        Quicksand, Verdana, Geneva, sans-serif;
+    text-align: center;
+}
+
+footer contact{
+    color: rgb(255,255,240);
+    background-color: rgb(171,99,36);
+    font: normal small-caps bold 0.9em/3em
+        Quicksand, Verdana, Geneva, sans-serif;
+    text-align: center;
+    line-height: 0.5em;
+}
+
+/*pseudo class for Hypertext links*/
+.OtherPages{
+    list-style-type: none;
+}
+
+.row2_column2 > p{
+    color:rgb(171, 61, 36);
+    text-align: center;
+}
